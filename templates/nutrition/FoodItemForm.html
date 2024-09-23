@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Food Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Enter Food Information</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}  <!-- Renders the form fields -->
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+    <a href="{% url 'nutrition_app:home' %}" class="btn btn-success mt-3">Home</a>
+</body>
+</html>

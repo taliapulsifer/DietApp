@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div class="container">
+        <h1 class="mt-5">My Daily Intake</h1>
+        <ul class="list-group mt-3">
+            <li class="list-group-item">Calories: {{ total_calories }}</li>
+            <li class="list-group-item">Protein: {{ total_protein }} g</li>
+            <li class="list-group-item">Carbohydrates: {{ total_carbs }} g</li>
+            <li class="list-group-item">Fats: {{ total_fats }} g</li>
+            <li class="list-group-item">Sodium: {{ total_sodium }} mg</li>
+            <li class="list-group-item">Sugar: {{ total_sugar }} g</li>
+        </ul>
+        <h2 class="mt-5">Meals Today</h2>
+        <ul class="list-group mt-3">
+            {% for meal in meals %}
+                <li class="list-group-item">{{ name }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <a href="{% url 'nutrition_app:foodForm' %}" class="btn btn-success mt-3">Add a Meal</a>
+        <form action="{% url 'nutrition_app:logout' %}" method="post" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger mt-3">Logout</button>
+        </form>
+    </div>
+</body>
+</html>

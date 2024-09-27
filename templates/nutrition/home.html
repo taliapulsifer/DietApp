@@ -1,29 +1,62 @@
+{% load static %}
+{% load mathExtras %}
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="{% static 'waterStyle.css' %}">
+    <title>HOME</title>
+</head>
 <body>
-    <div class="container">
-        <h1 class="mt-5">My Daily Intake</h1>
-        <ul class="list-group mt-3">
-            <li class="list-group-item">Calories: {{ total_calories }}</li>
-            <li class="list-group-item">Protein: {{ total_protein }} g</li>
-            <li class="list-group-item">Carbohydrates: {{ total_carbs }} g</li>
-            <li class="list-group-item">Fats: {{ total_fats }} g</li>
-            <li class="list-group-item">Sodium: {{ total_sodium }} mg</li>
-            <li class="list-group-item">Sugar: {{ total_sugar }} g</li>
-        </ul>
-        <h2 class="mt-5">Meals Today</h2>
-        <ul class="list-group mt-3">
-            {% for meal in meals %}
-                <li class="list-group-item">{{ name }}</li>
-            {% endfor %}
-        </ul>
+     <nav class="navbar" navbar-expand-lg bg-body-tertiary>
+        <div class="container-fluid">
+            <a href="{% url 'nutrition_app:foodForm' %}" class="btn btn-primary">Add A Meal</a>
+            <a href="{% url 'nutrition_app:mealsList' %}" class="btn btn-primary">History</a>
+            <a href="{% url 'nutrition_app:profile' %}" class="btn btn-primary">Profile</a>
+            <form action="{% url 'nutrition_app:logout' %}" method="post" style="display:inline;">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-primary">Logout</button>
+            </form>
+        </div>
+    </nav>
+    
+    <div class="circle">
+        <div class="water" data-total-calories="{{ total_calories }}" style="height: 0;"></div>
     </div>
-    <div>
-        <a href="{% url 'nutrition_app:foodForm' %}" class="btn btn-success mt-3">Add a Meal</a>
-        <form action="{% url 'nutrition_app:logout' %}" method="post" style="display:inline;">
-            {% csrf_token %}
-            <button type="submit" class="btn btn-danger mt-3">Logout</button>
-        </form>
+    <script src="{% static 'waterAnimation.js' %}"></script>
+    <div class="calories_display">
+        <div class = "calories-box">
+            <p>{{ total_calories|percentage:2000|floatformat:2 }}%
+                {{ total_calories|floatformat:2 }}  / 2000
+            </p> <!-- Change 2000 to user caloric goal -->
+        </div>
     </div>
+    <div class="macros">
+        <div class="macro-box">
+            <h3>Calories</h3>
+            <p>{{ total_calories }}</p>
+        </div>
+        <div class="macro-box">
+            <h3>Protein</h3>
+            <p>{{ total_protein }} g</p>
+        </div>
+        <div class="macro-box">
+            <h3>Carbs</h3>
+            <p>{{ total_carbs }} g</p>
+        </div>
+        <div class="macro-box">
+            <h3>Fats</h3>
+            <p>{{ total_fats }} g</p>
+        </div>
+        <div class="macro-box">
+            <h3>Salt</h3>
+            <p>{{ total_sodium}}</p>
+        </div>
+        <div class="macro-box">
+            <h3>Sugar</h3>
+            <p>{{ total_sugar}} g</p>
+        </div>
+    </div>
+
 </body>
 </html>

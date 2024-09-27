@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 50px;
+}
+
+.navbar a.btn, .navbar button.btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: #007bff !important; /* Custom color with high specificity */
+    color: white;
+    border: none;
+    margin-top: -5px;
+}
+
+.navbar a.btn:hover, .navbar button.btn:hover {
+    background-color: #0056b3 !important; /* Custom hover color */
+}
+
+body {
+    background-color: #080733;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#meals-list {
+    color: white;
+}

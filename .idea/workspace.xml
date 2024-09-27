@@ -4,26 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c872e9d-7b5c-42bd-bdc7-b6a6ada38442" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DietApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DietApp/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DietApp/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DietApp/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DietApp/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DietApp/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mainApp/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mainApp/signals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mainApp/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/nutrition/FoodItemForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/nutrition/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/nutrition/login.html" afterDir="false" />
+    <list default="true" id="0c872e9d-7b5c-42bd-bdc7-b6a6ada38442" name="Changes" comment="Base of website layed out. No styling or sign up.">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mainApp/static/foodForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mainApp/static/history.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mainApp/static/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mainApp/static/water.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mainApp/static/water2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mainApp/static/waterAnimation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mainApp/static/waterStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mainApp/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mainApp/templatetags/mathExtras.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/nutrition/history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/nutrition/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DietApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DietApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DietApp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainApp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainApp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/nutrition/FoodItemForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nutrition/FoodItemForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/nutrition/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nutrition/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +36,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -59,9 +61,11 @@
     "Django Server.DietApp.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/talia/Documents/HealthApp",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,6 +75,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\talia\PycharmProjects\DietApp\mainApp" />
+      <recent name="C:\Users\talia\PycharmProjects\DietApp\templatetags" />
+      <recent name="C:\Users\talia\PycharmProjects\DietApp\templates" />
+      <recent name="C:\Users\talia\PycharmProjects\DietApp\templates\nutrition" />
+      <recent name="C:\Users\talia\PycharmProjects\DietApp\mainApp\styleSheets" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="DietApp" type="Python.DjangoServer" factoryName="Django server">
       <module name="DietApp" />
@@ -115,11 +128,36 @@
       <option name="presentableId" value="Default" />
       <updated>1727033822615</updated>
       <workItem from="1727033823974" duration="457000" />
-      <workItem from="1727034364696" duration="15075000" />
+      <workItem from="1727034364696" duration="17782000" />
+      <workItem from="1727122568209" duration="22865000" />
     </task>
+    <task id="LOCAL-00001" summary="Base of website layed out. No styling or sign up.">
+      <option name="closed" value="true" />
+      <created>1727061974718</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727061974718</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Base of website layed out. No styling or sign up." />
+    <option name="LAST_COMMIT_MESSAGE" value="Base of website layed out. No styling or sign up." />
   </component>
 </project>

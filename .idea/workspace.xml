@@ -5,6 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c872e9d-7b5c-42bd-bdc7-b6a6ada38442" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gh-pages/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gh-pages/static/foodForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gh-pages/static/history.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gh-pages/static/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gh-pages/static/water.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gh-pages/static/water2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gh-pages/static/waterAnimation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gh-pages/static/waterStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainApp/static/history.css" beforeDir="false" afterPath="$PROJECT_DIR$/mainApp/static/history.css" afterDir="false" />
@@ -63,7 +71,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
     "git-widget-placeholder": "gh-pages",
-    "last_opened_file_path": "C:/Users/talia/Documents/HealthApp",
+    "last_opened_file_path": "C:/Users/talia/PycharmProjects/DietApp/gh-pages/static",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -75,6 +83,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\talia\PycharmProjects\DietApp\gh-pages\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\talia\PycharmProjects\DietApp\mainApp" />
       <recent name="C:\Users\talia\PycharmProjects\DietApp\templatetags" />
@@ -128,7 +139,7 @@
       <updated>1727033822615</updated>
       <workItem from="1727033823974" duration="457000" />
       <workItem from="1727034364696" duration="17782000" />
-      <workItem from="1727122568209" duration="31373000" />
+      <workItem from="1727122568209" duration="31737000" />
     </task>
     <task id="LOCAL-00001" summary="Base of website layed out. No styling or sign up.">
       <option name="closed" value="true" />

@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Meal History</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'history.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a href="{% url 'nutrition_app:home' %}" class="btn btn-success">Home</a>
+            <form action="{% url 'nutrition_app:logout' %}" method="post" style="display:inline;">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger">Logout</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="mt-5">Meal History</h1>
+        {% if organized_meals %}
+            {% regroup organized_meals by date as grouped_meals %}
+            {% for group in grouped_meals %}
+                <h2>{{ group.grouper }}</h2>  <!-- This is the date -->
+                <ul>
+                    {% for meal in group.list %}
+                        <li><strong>{{ meal.meal_type }}</strong>:
+                            <ul>
+                                {% for item in meal.meal_items %}
+                                    <li>{{ item.name }} - Calories: {{ item.calories }}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+        {% else %}
+            <p>No meal history found.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c872e9d-7b5c-42bd-bdc7-b6a6ada38442" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gh-pages/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gh-pages/static/foodForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gh-pages/static/history.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gh-pages/static/profile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gh-pages/static/water.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gh-pages/static/water2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gh-pages/static/waterAnimation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gh-pages/static/waterStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainApp/static/history.css" beforeDir="false" afterPath="$PROJECT_DIR$/mainApp/static/history.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainApp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/nutrition/history.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nutrition/history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gh-pages/FoodItemForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/gh-pages/FoodItemForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gh-pages/history.html" beforeDir="false" afterPath="$PROJECT_DIR$/gh-pages/history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gh-pages/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/gh-pages/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/nutrition/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nutrition/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +63,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
     "git-widget-placeholder": "gh-pages",
-    "last_opened_file_path": "C:/Users/talia/PycharmProjects/DietApp/gh-pages/static",
+    "last_opened_file_path": "C:/Users/talia/PycharmProjects/DietApp/gh-pages",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -84,6 +76,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\talia\PycharmProjects\DietApp\gh-pages" />
       <recent name="C:\Users\talia\PycharmProjects\DietApp\gh-pages\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -139,7 +132,7 @@
       <updated>1727033822615</updated>
       <workItem from="1727033823974" duration="457000" />
       <workItem from="1727034364696" duration="17782000" />
-      <workItem from="1727122568209" duration="31737000" />
+      <workItem from="1727122568209" duration="32177000" />
     </task>
     <task id="LOCAL-00001" summary="Base of website layed out. No styling or sign up.">
       <option name="closed" value="true" />

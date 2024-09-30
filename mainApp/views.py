@@ -126,21 +126,25 @@ def foodForm(request):
 
     return render(request, 'nutrition/FoodItemForm.html', {'form': form})
 
+
 def meals_history(request):
     if request.user.is_authenticated:
-        # Fetch meals and prefetch related MealItems
+        # Fetch meals for the logged-in user and prefetch related MealItems
         meals = Meal.objects.filter(user=request.user).prefetch_related('items').order_by('date')
     else:
         meals = []
 
     # Prepare the context for rendering
-    organized_meals = defaultdict(list)
+    organized_meals = []  # List to hold meal data
     for meal in meals:
         meal_items = meal.items.all()  # Get related MealItems
-        organized_meals[meal.date].append({
+        organized_meals.append({
+            'date': meal.date,
             'meal_type': meal.mealType,
             'meal_items': meal_items,
         })
-    print(organized_meals)
 
+    print(organized_meals)  # For debugging the structure
+
+    # Pass the organized meals to the template
     return render(request, 'nutrition/history.html', {'organized_meals': organized_meals})

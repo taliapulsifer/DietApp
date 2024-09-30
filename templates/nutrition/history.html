@@ -18,24 +18,25 @@
     </nav>
     <div class="container">
         <h1 class="mt-5">Meal History</h1>
-        {% for date, meals in organized_meals.items %}
-            <h2>{{ date }}</h2>
-            <ul>
-            {% if organized_meals %}
-                {% for meal in organized_meals %}
-                    <li><strong>{{ meal.meal_type }}</strong>:
-                        <ul>
-                            {% for item in meal.meal_items %}
-                                <li>{{ item.name }} - Calories: {{ item.calories }}</li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-                {% endfor %}
-                {% else %}
-                <p>No meal history found.</p>
-            {% endif %}
-            </ul>
-        {% endfor %}
+        {% if organized_meals %}
+            {% regroup organized_meals by date as grouped_meals %}
+            {% for group in grouped_meals %}
+                <h2>{{ group.grouper }}</h2>  <!-- This is the date -->
+                <ul>
+                    {% for meal in group.list %}
+                        <li><strong>{{ meal.meal_type }}</strong>:
+                            <ul>
+                                {% for item in meal.meal_items %}
+                                    <li>{{ item.name }} - Calories: {{ item.calories }}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+        {% else %}
+            <p>No meal history found.</p>
+        {% endif %}
     </div>
 </body>
 </html>

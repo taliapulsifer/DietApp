@@ -5,7 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c872e9d-7b5c-42bd-bdc7-b6a6ada38442" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/gh-pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gh-pages/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_files.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/versel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/gh-pages/FoodItemForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/gh-pages/history.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/gh-pages/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/gh-pages/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/gh-pages/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/gh-pages/static/foodForm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/gh-pages/static/history.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/gh-pages/static/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/gh-pages/static/water.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/gh-pages/static/water2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/gh-pages/static/waterAnimation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/gh-pages/static/waterStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DietApp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DietApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DietApp/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/DietApp/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +94,11 @@
       <recent name="C:\Users\talia\PycharmProjects\DietApp\gh-pages\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\talia\PycharmProjects\DietApp\DietApp" />
       <recent name="C:\Users\talia\PycharmProjects\DietApp\mainApp" />
       <recent name="C:\Users\talia\PycharmProjects\DietApp\templatetags" />
       <recent name="C:\Users\talia\PycharmProjects\DietApp\templates" />
       <recent name="C:\Users\talia\PycharmProjects\DietApp\templates\nutrition" />
-      <recent name="C:\Users\talia\PycharmProjects\DietApp\mainApp\styleSheets" />
     </key>
   </component>
   <component name="RunManager">
@@ -128,7 +146,7 @@
       <updated>1727033822615</updated>
       <workItem from="1727033823974" duration="457000" />
       <workItem from="1727034364696" duration="17782000" />
-      <workItem from="1727122568209" duration="32271000" />
+      <workItem from="1727122568209" duration="37612000" />
     </task>
     <task id="LOCAL-00001" summary="Base of website layed out. No styling or sign up.">
       <option name="closed" value="true" />

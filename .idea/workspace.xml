@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c872e9d-7b5c-42bd-bdc7-b6a6ada38442" name="Changes" comment="Added requirements">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0c872e9d-7b5c-42bd-bdc7-b6a6ada38442" name="Changes" comment="Added to allowed hosts">
       <change beforePath="$PROJECT_DIR$/DietApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DietApp/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727836249388</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added to allowed hosts">
+      <option name="closed" value="true" />
+      <created>1727842567420</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727842567420</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +157,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Base of website layed out. No styling or sign up." />
     <MESSAGE value="Added requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added requirements" />
+    <MESSAGE value="Added to allowed hosts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added to allowed hosts" />
   </component>
 </project>

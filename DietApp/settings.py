@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-jv7dy&m$e=2l+kj(u!2dv*7o&&9%re=3_x_fmtt^cch9eonlf)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['diet-app-t0i3.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
